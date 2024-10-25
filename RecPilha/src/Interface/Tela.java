@@ -106,11 +106,11 @@ public Tela(){
             while(!pilha.isEmpty()){
                 pilha.pop();     
             }
-            painel.setBackground(Color.WHITE);
+                painel.setBackground(Color.WHITE);
         } 
     else if (e.getSource().equals(desfazer)) {
-            Fundo corAnterior = pilha.pop();
             if (!pilha.isEmpty()) {
+                Fundo corAnterior = pilha.pop();
                 painel.setBackground(corAnterior.getCor()); 
             } else {
                 painel.setBackground(Color.WHITE); 
